@@ -7,10 +7,11 @@ start_date INTEGER,
 end_date INTEGER);
 
 
--- Users
--- name and an age
---
---
+CREATE TABLE users (
+  id INTEGER PRIMARY KEY,
+  name TEXT,
+  age INTEGER);
+
 --
 -- Pledges
 -- ledge has an amount. It belongs to a user, and it also belongs to a project.
