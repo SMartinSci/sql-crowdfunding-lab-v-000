@@ -12,6 +12,10 @@ CREATE TABLE users (
   name TEXT,
   age INTEGER);
 
---
--- Pledges
--- ledge has an amount. It belongs to a user, and it also belongs to a project.
+CREATE TABLE pledges (
+    id INTEGER PRIMARY KEY,
+    amount INTEGER);
+
+    ...ON Pledges.Users_id = Users.id;
+
+-- . It belongs to a user, and it also belongs to a project.
